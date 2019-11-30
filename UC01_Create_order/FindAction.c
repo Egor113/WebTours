@@ -21,8 +21,6 @@ FindAction()
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
 		"Snapshot=t3.inf",
 		"Mode=HTML",
-//		EXTRARES,
-//		"URL=../WebTours/classes/FormDateUpdate.class", ENDITEM,
 		LAST);
 		
 	lr_save_string(lr_paramarr_random("city"), departValue);

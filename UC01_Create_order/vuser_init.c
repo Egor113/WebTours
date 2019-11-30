@@ -12,8 +12,6 @@ vuser_init()
 		"Referer=", 
 		"Snapshot=t1.inf", 
 		"Mode=HTML", 
-//		EXTRARES, 
-//		"Url=https://ieonline.microsoft.com/iedomainsuggestions/ie11/suggestions.ru-RU", "Referer=", ENDITEM, 
 		LAST);
 
 	web_set_sockets_option("SSL_VERSION", "TLS1.2");

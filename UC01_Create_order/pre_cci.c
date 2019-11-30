@@ -2605,8 +2605,6 @@ vuser_init()
 		"Referer=", 
 		"Snapshot=t1.inf", 
 		"Mode=HTML", 
- 
- 
 		"LAST");
 
 	web_set_sockets_option("SSL_VERSION", "TLS1.2");
@@ -2662,8 +2660,6 @@ FindAction()
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
 		"Snapshot=t3.inf",
 		"Mode=HTML",
- 
- 
 		"LAST");
 		
 	lr_save_string(lr_paramarr_random("city"), departValue);

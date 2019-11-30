@@ -1,10 +1,6 @@
 FindAction()
 {
 
-	char* flightNumberValue = "flightNumberValue";
-	char* departValue = "departValue";
-	char* arriveValue = "arriveValue";
-	
 	lr_start_transaction("UC01_TR02_Flights");
 
 	web_reg_save_param("city",
@@ -23,9 +19,9 @@ FindAction()
 		"Mode=HTML",
 		LAST);
 		
-	lr_save_string(lr_paramarr_random("city"), departValue);
+	lr_save_string(lr_paramarr_random("city"), "departValue");
 	
-	lr_save_string(lr_paramarr_random("city"), arriveValue);
+	lr_save_string(lr_paramarr_random("city"), "arriveValue");
 
 	
 	lr_end_transaction("UC01_TR02_Flights",LR_AUTO);
@@ -64,7 +60,7 @@ FindAction()
 		"Name=findFlights.y", "Value=5", ENDITEM,
 		LAST);
 
-	lr_save_string(lr_paramarr_random("flightNumber"), flightNumberValue);
+	lr_save_string(lr_paramarr_random("flightNumber"), "flightNumberValue");
 
 	lr_end_transaction("UC01_TR03_Find_Flight",LR_AUTO);
 			

@@ -8,11 +8,11 @@ CheckAction()
 	web_reg_find("Text=Itinerary",LAST);
 	
 	web_url("Itinerary Button",
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary",
+		"URL={Host}:{Port}/cgi-bin/welcome.pl?page=itinerary",
 		"TargetFrame=body",
 		"Resource=0",
 		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights",
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?page=menu&in=flights",
 		"Snapshot=t7.inf",
 		"Mode=HTML",
 		LAST);

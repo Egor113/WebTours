@@ -6,22 +6,22 @@
                 "stepId": "STEP1",
                 "stepName": "Url: WebTours",
                 "infFile": "t1.inf",
-                "time": 1575124777190
+                "time": 1575125240140
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Submit Data: login.pl",
                 "infFile": "t2.inf",
-                "time": 1575124777812
+                "time": 1575125240361
             }
         ],
         "transactions": [
             {
                 "transactionName": "UC01_TR01_Login",
-                "rawStartTime": 1575124777195,
-                "rawEndTime": 1575124777812,
+                "rawStartTime": 1575125240144,
+                "rawEndTime": 1575125240361,
                 "thinkTime": 0.0,
-                "wastedTime": 0.01087808609008789
+                "wastedTime": 0.01840353012084961
             }
         ]
     }

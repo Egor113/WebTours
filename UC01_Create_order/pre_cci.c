@@ -2598,7 +2598,7 @@ vuser_init()
                    "RB=\"/>", "LAST");
 	
 	web_url("WebTours", 
-		"URL=http://localhost:1080/WebTours/", 
+		"URL={Host}:{Port}/WebTours/", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
@@ -2614,11 +2614,11 @@ vuser_init()
 	web_reg_find("Text=Welcome, <b>{Login}</b>, to the Web Tours reservation pages.","LAST");
 
 	web_submit_data("login.pl", 
-		"Action=http://localhost:1080/cgi-bin/login.pl", 
+		"Action={Host}:{Port}/cgi-bin/login.pl", 
 		"Method=POST", 
 		"TargetFrame=body", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home", 
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?in=home", 
 		"Snapshot=t2.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
@@ -2653,11 +2653,11 @@ FindAction()
 				 "LAST");
 	
 	web_url("Search Flights Button",
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search",
+		"URL={Host}:{Port}/cgi-bin/welcome.pl?page=search",
 		"TargetFrame=body",
 		"Resource=0",
 		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?page=menu&in=home",
 		"Snapshot=t3.inf",
 		"Mode=HTML",
 		"LAST");
@@ -2680,11 +2680,11 @@ FindAction()
         "LAST");
 	
 	web_submit_data("reservations.pl",
-		"Action=http://localhost:1080/cgi-bin/reservations.pl",
+		"Action={Host}:{Port}/cgi-bin/reservations.pl",
 		"Method=POST",
 		"TargetFrame=",
 		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome",
+		"Referer={Host}:{Port}/cgi-bin/reservations.pl?page=welcome",
 		"Snapshot=t4.inf",
 		"Mode=HTML",
 		"ITEMDATA",
@@ -2741,11 +2741,11 @@ BookAction()
 # 49 "BookAction.c"
    
 	web_submit_data("reservations.pl_2", 
-		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Action={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Referer={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Snapshot=t5.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
@@ -2767,11 +2767,11 @@ BookAction()
 	web_reg_find("Text=Thank you for booking through Web Tours.","LAST");
 	
 	web_submit_data("reservations.pl_3", 
-		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Action={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Referer={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
@@ -2812,11 +2812,11 @@ CheckAction()
 	web_reg_find("Text=Itinerary","LAST");
 	
 	web_url("Itinerary Button",
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary",
+		"URL={Host}:{Port}/cgi-bin/welcome.pl?page=itinerary",
 		"TargetFrame=body",
 		"Resource=0",
 		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights",
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?page=menu&in=flights",
 		"Snapshot=t7.inf",
 		"Mode=HTML",
 		"LAST");
@@ -2838,11 +2838,11 @@ vuser_end()
 	web_reg_find("Text=Username","LAST");
 	
 	web_url("SignOff Button",
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1",
+		"URL={Host}:{Port}/cgi-bin/welcome.pl?signOff=1",
 		"TargetFrame=body",
 		"Resource=0",
 		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary",
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?page=menu&in=itinerary",
 		"Snapshot=t8.inf",
 		"Mode=HTML",
 		"LAST");

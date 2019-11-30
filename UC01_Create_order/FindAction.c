@@ -14,11 +14,11 @@ FindAction()
 				 LAST);
 	
 	web_url("Search Flights Button",
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search",
+		"URL={Host}:{Port}/cgi-bin/welcome.pl?page=search",
 		"TargetFrame=body",
 		"Resource=0",
 		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?page=menu&in=home",
 		"Snapshot=t3.inf",
 		"Mode=HTML",
 		LAST);
@@ -41,11 +41,11 @@ FindAction()
         LAST);
 	
 	web_submit_data("reservations.pl",
-		"Action=http://localhost:1080/cgi-bin/reservations.pl",
+		"Action={Host}:{Port}/cgi-bin/reservations.pl",
 		"Method=POST",
 		"TargetFrame=",
 		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome",
+		"Referer={Host}:{Port}/cgi-bin/reservations.pl?page=welcome",
 		"Snapshot=t4.inf",
 		"Mode=HTML",
 		ITEMDATA,

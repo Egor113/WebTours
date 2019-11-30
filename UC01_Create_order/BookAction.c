@@ -48,11 +48,11 @@ BookAction()
     */
    
 	web_submit_data("reservations.pl_2", 
-		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Action={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Referer={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Snapshot=t5.inf", 
 		"Mode=HTML", 
 		ITEMDATA, 
@@ -74,11 +74,11 @@ BookAction()
 	web_reg_find("Text=Thank you for booking through Web Tours.",LAST);
 	
 	web_submit_data("reservations.pl_3", 
-		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Action={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
+		"Referer={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		ITEMDATA, 

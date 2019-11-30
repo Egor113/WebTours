@@ -5,7 +5,7 @@ vuser_init()
                    "RB=\"/>", LAST);
 	
 	web_url("WebTours", 
-		"URL=http://localhost:1080/WebTours/", 
+		"URL={Host}:{Port}/WebTours/", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
@@ -21,11 +21,11 @@ vuser_init()
 	web_reg_find("Text=Welcome, <b>{Login}</b>, to the Web Tours reservation pages.",LAST);
 
 	web_submit_data("login.pl", 
-		"Action=http://localhost:1080/cgi-bin/login.pl", 
+		"Action={Host}:{Port}/cgi-bin/login.pl", 
 		"Method=POST", 
 		"TargetFrame=body", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home", 
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?in=home", 
 		"Snapshot=t2.inf", 
 		"Mode=HTML", 
 		ITEMDATA, 

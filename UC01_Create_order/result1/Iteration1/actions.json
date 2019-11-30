@@ -6,29 +6,29 @@
                 "stepId": "STEP3",
                 "stepName": "Url: Search Flights Button",
                 "infFile": "t3.inf",
-                "time": 1575125240664
+                "time": 1575127892771
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Submit Data: reservations.pl",
                 "infFile": "t5.inf",
-                "time": 1575125240856
+                "time": 1575127892904
             }
         ],
         "transactions": [
             {
                 "transactionName": "UC01_TR02_Flights",
-                "rawStartTime": 1575125240383,
-                "rawEndTime": 1575125240669,
+                "rawStartTime": 1575127892564,
+                "rawEndTime": 1575127892777,
                 "thinkTime": 0.0,
-                "wastedTime": 0.013549089431762696
+                "wastedTime": 0.013212203979492188
             },
             {
                 "transactionName": "UC01_TR03_Find_Flight",
-                "rawStartTime": 1575125240673,
-                "rawEndTime": 1575125240860,
+                "rawStartTime": 1575127892782,
+                "rawEndTime": 1575127892908,
                 "thinkTime": 0.0,
-                "wastedTime": 0.009581327438354493
+                "wastedTime": 0.009819746017456055
             }
         ]
     },
@@ -39,29 +39,29 @@
                 "stepId": "STEP5",
                 "stepName": "Url: Search Flights Button",
                 "infFile": "t6.inf",
-                "time": 1575125241143
+                "time": 1575127893132
             },
             {
                 "stepId": "STEP6",
                 "stepName": "Submit Data: reservations.pl",
                 "infFile": "t8.inf",
-                "time": 1575125241266
+                "time": 1575127893258
             }
         ],
         "transactions": [
             {
                 "transactionName": "UC01_TR02_Flights",
-                "rawStartTime": 1575125240876,
-                "rawEndTime": 1575125241149,
+                "rawStartTime": 1575127892925,
+                "rawEndTime": 1575127893138,
                 "thinkTime": 0.0,
-                "wastedTime": 0.01224374771118164
+                "wastedTime": 0.0075719356536865238
             },
             {
                 "transactionName": "UC01_TR03_Find_Flight",
-                "rawStartTime": 1575125241153,
-                "rawEndTime": 1575125241270,
+                "rawStartTime": 1575127893143,
+                "rawEndTime": 1575127893262,
                 "thinkTime": 0.0,
-                "wastedTime": 0.008005142211914063
+                "wastedTime": 0.008107662200927735
             }
         ]
     },
@@ -72,29 +72,29 @@
                 "stepId": "STEP7",
                 "stepName": "Url: Search Flights Button",
                 "infFile": "t9.inf",
-                "time": 1575125241502
+                "time": 1575127893457
             },
             {
                 "stepId": "STEP8",
                 "stepName": "Submit Data: reservations.pl",
                 "infFile": "t11.inf",
-                "time": 1575125241628
+                "time": 1575127893577
             }
         ],
         "transactions": [
             {
                 "transactionName": "UC01_TR02_Flights",
-                "rawStartTime": 1575125241286,
-                "rawEndTime": 1575125241508,
+                "rawStartTime": 1575127893277,
+                "rawEndTime": 1575127893464,
                 "thinkTime": 0.0,
-                "wastedTime": 0.012358903884887696
+                "wastedTime": 0.007537841796875
             },
             {
                 "transactionName": "UC01_TR03_Find_Flight",
-                "rawStartTime": 1575125241512,
-                "rawEndTime": 1575125241632,
+                "rawStartTime": 1575127893468,
+                "rawEndTime": 1575127893581,
                 "thinkTime": 0.0,
-                "wastedTime": 0.00828862190246582
+                "wastedTime": 0.010146617889404297
             }
         ]
     },
@@ -105,29 +105,29 @@
                 "stepId": "STEP9",
                 "stepName": "Submit Data: reservations.pl_2",
                 "infFile": "t12.inf",
-                "time": 1575125241772
+                "time": 1575127893698
             },
             {
                 "stepId": "STEP10",
                 "stepName": "Submit Data: reservations.pl_3",
                 "infFile": "t13.inf",
-                "time": 1575125241899
+                "time": 1575127893833
             }
         ],
         "transactions": [
             {
                 "transactionName": "UC01_TR04_Select_Flight",
-                "rawStartTime": 1575125241645,
-                "rawEndTime": 1575125241773,
+                "rawStartTime": 1575127893593,
+                "rawEndTime": 1575127893699,
                 "thinkTime": 0.0,
-                "wastedTime": 0.0059452056884765629
+                "wastedTime": 0.00493168830871582
             },
             {
                 "transactionName": "UC01_TR05_Payment_Details",
-                "rawStartTime": 1575125241778,
-                "rawEndTime": 1575125241901,
+                "rawStartTime": 1575127893704,
+                "rawEndTime": 1575127893835,
                 "thinkTime": 0.0,
-                "wastedTime": 0.005720376968383789
+                "wastedTime": 0.0046885013580322269
             }
         ]
     },
@@ -138,16 +138,16 @@
                 "stepId": "STEP11",
                 "stepName": "Url: Itinerary Button",
                 "infFile": "t14.inf",
-                "time": 1575125242123
+                "time": 1575127894040
             }
         ],
         "transactions": [
             {
                 "transactionName": "UC01_TR06_Itenarary",
-                "rawStartTime": 1575125241915,
-                "rawEndTime": 1575125242124,
+                "rawStartTime": 1575127893847,
+                "rawEndTime": 1575127894042,
                 "thinkTime": 0.0,
-                "wastedTime": 0.008464574813842774
+                "wastedTime": 0.008162975311279297
             }
         ]
     }

@@ -2719,27 +2719,6 @@ BookAction()
 
 	lr_start_transaction("UC01_TR04_Select_Flight");
 
-	web_reg_save_param("firstName",
-                   "LB=name=\"firstName\" value=\"",
-                   "RB=\" size=", "LAST");
-	
-	web_reg_save_param("lastName",
-                   "LB=name=\"lastName\" value=\"",
-                   "RB=\" size=", "LAST");
-	
-	 
-# 25 "BookAction.c"
-   	
-   	 
-# 35 "BookAction.c"
-   	
-	web_reg_save_param("pass1",
-                   "LB=name=\"pass1\" value=\"",
-                   "RB=\" size=", "LAST");
-	
-	 
-# 49 "BookAction.c"
-   
 	web_submit_data("reservations.pl_2", 
 		"Action={Host}:{Port}/cgi-bin/reservations.pl", 
 		"Method=POST", 
@@ -2775,13 +2754,13 @@ BookAction()
 		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
-		"Name=firstName", "Value={firstName}", "ENDITEM", 
-		"Name=lastName", "Value={lastName}", "ENDITEM", 
-		"Name=address1", "Value=Lenina", "ENDITEM", 
-		"Name=address2", "Value=Moscow", "ENDITEM", 
-		"Name=pass1", "Value={pass1}", "ENDITEM", 
-		"Name=creditCard", "Value=123456789", "ENDITEM", 
-		"Name=expDate", "Value=08/23", "ENDITEM", 
+		"Name=firstName", "Value={FirstName}", "ENDITEM", 
+		"Name=lastName", "Value={LastName}", "ENDITEM", 
+		"Name=address1", "Value={Address1}", "ENDITEM", 
+		"Name=address2", "Value={Address2}", "ENDITEM", 
+		"Name=pass1", "Value={FirstName} {LastName}", "ENDITEM", 
+		"Name=creditCard", "Value={CreditCard}", "ENDITEM", 
+		"Name=expDate", "Value={ExpDate}", "ENDITEM", 
 		"Name=oldCCOption", "Value=", "ENDITEM", 
 		"Name=numPassengers", "Value=1", "ENDITEM", 
 		"Name=seatType", "Value=Business", "ENDITEM", 

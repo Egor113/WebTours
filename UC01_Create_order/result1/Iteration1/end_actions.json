@@ -6,16 +6,16 @@
                 "stepId": "STEP12",
                 "stepName": "Url: SignOff Button",
                 "infFile": "t15.inf",
-                "time": 1575125242301
+                "time": 1575127894201
             }
         ],
         "transactions": [
             {
                 "transactionName": "UC01_TR07_Log_Out",
-                "rawStartTime": 1575125242137,
-                "rawEndTime": 1575125242301,
+                "rawStartTime": 1575127894055,
+                "rawEndTime": 1575127894201,
                 "thinkTime": 0.0,
-                "wastedTime": 0.009579658508300782
+                "wastedTime": 0.0065691471099853519
             }
         ]
     }

@@ -1,0 +1,154 @@
+[
+    {
+        "actionName": "FindAction",
+        "steps": [
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: Search Flights Button",
+                "infFile": "t3.inf",
+                "time": 1574453535449
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t5.inf",
+                "time": 1574453539000
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC01_TR02_Flights",
+                "rawStartTime": 1574453535238,
+                "rawEndTime": 1574453535455,
+                "thinkTime": 0.0,
+                "wastedTime": 0.013962030410766602
+            },
+            {
+                "transactionName": "UC01_TR03_Find_Flight",
+                "rawStartTime": 1574453538775,
+                "rawEndTime": 1574453539003,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011542558670043946
+            }
+        ]
+    },
+    {
+        "actionName": "FindAction",
+        "steps": [
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: Search Flights Button",
+                "infFile": "t6.inf",
+                "time": 1574453539275
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t8.inf",
+                "time": 1574453542692
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC01_TR02_Flights",
+                "rawStartTime": 1574453539022,
+                "rawEndTime": 1574453539281,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010753393173217774
+            },
+            {
+                "transactionName": "UC01_TR03_Find_Flight",
+                "rawStartTime": 1574453542584,
+                "rawEndTime": 1574453542696,
+                "thinkTime": 0.0,
+                "wastedTime": 0.007735013961791992
+            }
+        ]
+    },
+    {
+        "actionName": "FindAction",
+        "steps": [
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: Search Flights Button",
+                "infFile": "t9.inf",
+                "time": 1574453542926
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t11.inf",
+                "time": 1574453546351
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC01_TR02_Flights",
+                "rawStartTime": 1574453542713,
+                "rawEndTime": 1574453542932,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011018514633178711
+            },
+            {
+                "transactionName": "UC01_TR03_Find_Flight",
+                "rawStartTime": 1574453546238,
+                "rawEndTime": 1574453546355,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010164976119995118
+            }
+        ]
+    },
+    {
+        "actionName": "BookAction",
+        "steps": [
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: reservations.pl_2",
+                "infFile": "t12.inf",
+                "time": 1574453549830
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Submit Data: reservations.pl_3",
+                "infFile": "t13.inf",
+                "time": 1574453553345
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC01_TR04_Select_Flight",
+                "rawStartTime": 1574453549670,
+                "rawEndTime": 1574453549831,
+                "thinkTime": 0.0,
+                "wastedTime": 0.006365060806274414
+            },
+            {
+                "transactionName": "UC01_TR05_Payment_Details",
+                "rawStartTime": 1574453553137,
+                "rawEndTime": 1574453553346,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0058040618896484379
+            }
+        ]
+    },
+    {
+        "actionName": "CheckAction",
+        "steps": [
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: Itinerary Button",
+                "infFile": "t14.inf",
+                "time": 1574453556944
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC01_TR06_Itenarary",
+                "rawStartTime": 1574453556659,
+                "rawEndTime": 1574453556946,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008759498596191407
+            }
+        ]
+    }
+]

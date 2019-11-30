@@ -1,0 +1,32 @@
+[Scenario]
+Product=LoadRunner Controller
+Version=12.60.0.0
+Path=Scenario1
+Subject=
+Result_file=c:\users\student\desktop\ogdanets\uc01_create_order\res0\res0.lrr
+Description=
+ResultName=res0
+Time_Zone=-10800
+Start_time=1573563745
+Daylight_Bias=0
+Stop_time=1573563791
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By command
+Stop_reason=By command
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Schedule 1
+Mode=Scenario Scheduling
+Scenario Duration=Start 10 Vusers: 1 every 00:00:30 (HH:MM:SS); Run for 00:20:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:30 (HH:MM:SS)
+Load Behavior=Initialize each Vuser just before it runs
+[Scripts]
+UC01_Create_order=C:\Users\student\Desktop\Ogdanets\UC01_Create_order\UC01_Create_order.usr
+[Scripts_types]
+UC01_Create_order=Multi+QTWeb

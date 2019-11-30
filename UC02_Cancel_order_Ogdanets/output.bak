@@ -1,0 +1,39 @@
+Virtual User Script started at: 22.11.2019 23:15:49
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.60.0 for Windows 10; build 971 (рту 09 2018 11:27:13)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\egogd\Desktop\18\Ogdanets\LR_DZ_Ogdanets\WebTours\UC02_Cancel_order_Ogdanets\\default.cfg"  	[MsgId: MMSG-27141]
+vuser_init.c(3): web_reg_save_param started  	[MsgId: MMSG-26355]
+vuser_init.c(3): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+vuser_init.c(7): web_url("webTours") started  	[MsgId: MMSG-26355]
+vuser_init.c(7): Detected non-resource "http://localhost:1080/webTours/header.html" in "http://localhost:1080/webTours/"  	[MsgId: MMSG-26574]
+vuser_init.c(7): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/webTours/"  	[MsgId: MMSG-26574]
+vuser_init.c(7): Found resource "http://localhost:1080/webTours/images/hp_logo.png" in HTML "http://localhost:1080/webTours/header.html"  	[MsgId: MMSG-26659]
+vuser_init.c(7): Found resource "http://localhost:1080/webTours/images/webtours.png" in HTML "http://localhost:1080/webTours/header.html"  	[MsgId: MMSG-26659]
+vuser_init.c(7): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+vuser_init.c(7): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+vuser_init.c(7): Notify: Saving Parameter "userSession = 127537.768327258zfzAccDpQfiDDDDDDQDzVpDtDHf".
+vuser_init.c(7): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+vuser_init.c(7): web_url("webTours") was successful, 10079 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+vuser_init.c(17): Notify: Transaction "UC02_TR01_Login" started.
+vuser_init.c(19): web_reg_find started  	[MsgId: MMSG-26355]
+vuser_init.c(19): Notify: Parameter Substitution: parameter "Login" =  "jojo"
+vuser_init.c(19): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+vuser_init.c(21): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+vuser_init.c(21): Notify: Parameter Substitution: parameter "userSession" =  "127537.768327258zfzAccDpQfiDDDDDDQDzVpDtDHf"
+vuser_init.c(21): Notify: Parameter Substitution: parameter "Login" =  "jojo"
+vuser_init.c(21): Notify: Parameter Substitution: parameter "Password" =  "bean"
+vuser_init.c(21): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+vuser_init.c(21): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+vuser_init.c(21): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+vuser_init.c(21): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+vuser_init.c(21): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+vuser_init.c(21): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+vuser_init.c(21): Registered web_reg_find successful for "Text=Welcome, <b>jojo</b>, to the Web Tours reservation pages." (count=1)  	[MsgId: MMSG-26364]
+vuser_init.c(21): web_submit_data("login.pl") was successful, 5779 body bytes, 2031 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+vuser_init.c(38): web_set_sockets_option started  	[MsgId: MMSG-26355]
+vuser_init.c(38): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+vuser_init.c(40): Notify: Transaction "UC02_TR01_Login" ended with a "Pass" status (Duration: 0,1825 Wasted Time: 0,0087).
+vuser_init.c(42): lr_think_time: 55,00 seconds.
+Abort was called from an action.

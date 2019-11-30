@@ -1,0 +1,10 @@
+[vuser_init]
+SnapshotIndex=I1_vuser_init
+[BookAction]
+SnapshotIndex=I1_BookAction
+[FindAction]
+SnapshotIndex=I1_FindAction
+[vuser_end]
+SnapshotIndex=I1_vuser_end
+[CheckAction]
+SnapshotIndex=I1_CheckAction

@@ -1,0 +1,20 @@
+[t15]
+FileName2=t15f0.html
+RawStepEndTime=1573565250858
+UseFrameIndex=1
+RequestBodyFile=t15_RequestBody.txt
+RawStepName=Itinerary Button
+ContentType=text/html
+URL1=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary
+URL2=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary
+URL3=http://localhost:1080/cgi-bin/itinerary.pl
+ResponseHeaderFile=t15_ResponseHeader.txt
+SnapshotXmlFile=snapshot_9.xml
+RequestHeaderFile=t15_RequestHeader.txt
+RawStepStartTime=1573565250724
+Total=3
+StepName=Url: Itinerary Button
+FrameIndex2=0.0
+FrameIndex3=0.1
+FileName1=t15.html
+FileName3=t15f1.html

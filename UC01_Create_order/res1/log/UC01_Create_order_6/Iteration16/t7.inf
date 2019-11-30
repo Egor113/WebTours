@@ -1,0 +1,20 @@
+[t7]
+FileName2=t7f0.html
+RawStepEndTime=1573565430245
+UseFrameIndex=1
+RequestBodyFile=t7_RequestBody.txt
+RawStepName=Search Flights Button
+ContentType=text/html
+URL1=http://localhost:1080/cgi-bin/welcome.pl?page=search
+URL2=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights
+URL3=http://localhost:1080/cgi-bin/reservations.pl?page=welcome
+ResponseHeaderFile=t7_ResponseHeader.txt
+SnapshotXmlFile=snapshot_3.xml
+RequestHeaderFile=t7_RequestHeader.txt
+RawStepStartTime=1573565430102
+Total=3
+StepName=Url: Search Flights Button
+FrameIndex2=0.0
+FrameIndex3=0.1
+FileName1=t7.html
+FileName3=t7f1.html

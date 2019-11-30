@@ -1,0 +1,20 @@
+[t16]
+FileName2=t16f0.html
+RawStepEndTime=1573565834278
+UseFrameIndex=1
+RequestBodyFile=t16_RequestBody.txt
+RawStepName=SignOff Button
+ContentType=text/html
+URL1=http://localhost:1080/cgi-bin/welcome.pl?signOff=1
+URL2=http://localhost:1080/cgi-bin/nav.pl?in=home
+URL3=http://localhost:1080/WebTours/home.html
+ResponseHeaderFile=t16_ResponseHeader.txt
+SnapshotXmlFile=snapshot_10.xml
+RequestHeaderFile=t16_RequestHeader.txt
+RawStepStartTime=1573565834145
+Total=3
+StepName=Url: SignOff Button
+FrameIndex2=0.0
+FrameIndex3=0.1
+FileName1=t16.html
+FileName3=t16f1.html

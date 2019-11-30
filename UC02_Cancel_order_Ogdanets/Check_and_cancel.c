@@ -2,19 +2,6 @@ Check_and_cancel()
 {
 	int i;
 
-	web_add_header("UA-CPU", 
-		"AMD64");
-
-	web_url("iecompatviewlist.xml", 
-		"URL=https://iecvlist.microsoft.com/IE11/1478281996/iecompatviewlist.xml", 
-		"TargetFrame=", 
-		"Resource=0", 
-		"RecContentType=text/xml", 
-		"Referer=", 
-		"Snapshot=t9.inf", 
-		"Mode=HTML", 
-		LAST);
-
 	lr_start_transaction("UC02_TR02_Check");
 
 	 web_reg_save_param("c_flightids",

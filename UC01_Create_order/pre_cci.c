@@ -1,4 +1,4 @@
-# 1 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c"
+# 1 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -964,7 +964,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
+# 1 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1130,7 +1130,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
+# 2 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
 
 # 1 "globals.h" 1
 
@@ -2588,7 +2588,7 @@ void
  
 
 
-# 3 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
+# 3 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
@@ -2605,8 +2605,8 @@ vuser_init()
 		"Referer=", 
 		"Snapshot=t1.inf", 
 		"Mode=HTML", 
-		"EXTRARES", 
-		"Url=https://ieonline.microsoft.com/iedomainsuggestions/ie11/suggestions.ru-RU", "Referer=", "ENDITEM", 
+ 
+ 
 		"LAST");
 
 	web_set_sockets_option("SSL_VERSION", "TLS1.2");
@@ -2636,7 +2636,7 @@ vuser_init()
 	lr_think_time(3.3);
 	return 0;
 }
-# 4 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
+# 4 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
 
 # 1 "FindAction.c" 1
 FindAction()
@@ -2662,8 +2662,8 @@ FindAction()
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home",
 		"Snapshot=t3.inf",
 		"Mode=HTML",
-		"EXTRARES",
-		"URL=../WebTours/classes/FormDateUpdate.class", "ENDITEM",
+ 
+ 
 		"LAST");
 		
 	lr_save_string(lr_paramarr_random("city"), departValue);
@@ -2713,7 +2713,7 @@ FindAction()
 			
 	return 0;
 }
-# 5 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
+# 5 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
 
 # 1 "BookAction.c" 1
 BookAction()
@@ -2803,7 +2803,7 @@ BookAction()
 
 	return 0;
 }
-# 6 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
+# 6 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
 
 # 1 "CheckAction.c" 1
 CheckAction()
@@ -2831,7 +2831,7 @@ CheckAction()
 
 	return 0;
 }
-# 7 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
+# 7 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
@@ -2853,5 +2853,5 @@ vuser_end()
 	lr_end_transaction("UC01_TR07_Log_Out",2);
 	return 0;
 }
-# 8 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
+# 8 "c:\\projects\\perfomance lab\\webtours\\uc01_create_order\\\\combined_UC01_Create_order.c" 2
 

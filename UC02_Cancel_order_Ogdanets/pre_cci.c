@@ -1,4 +1,4 @@
-# 1 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c"
+# 1 "c:\\projects\\perfomance lab\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -964,7 +964,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
+# 1 "c:\\projects\\perfomance lab\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1130,7 +1130,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
+# 2 "c:\\projects\\perfomance lab\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
 
 # 1 "globals.h" 1
 
@@ -2592,7 +2592,7 @@ void
 
 
 
-# 3 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
+# 3 "c:\\projects\\perfomance lab\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
@@ -2602,7 +2602,7 @@ vuser_init()
                    "RB=\"/>", "LAST");
 	
 	web_url("webTours", 
-		"URL=http://localhost:1080/webTours/", 
+		"URL={Host}:{Port}/webTours/", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
@@ -2616,11 +2616,11 @@ vuser_init()
 	web_reg_find("Text=Welcome, <b>{Login}</b>, to the Web Tours reservation pages.","LAST");
 	
 	web_submit_data("login.pl", 
-		"Action=http://localhost:1080/cgi-bin/login.pl", 
+		"Action={Host}:{Port}/cgi-bin/login.pl", 
 		"Method=POST", 
 		"TargetFrame=body", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?in=home", 
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?in=home", 
 		"Snapshot=t8.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
@@ -2640,7 +2640,7 @@ vuser_init()
 	
 	return 0;
 }
-# 4 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
+# 4 "c:\\projects\\perfomance lab\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
 
 # 1 "Check_and_cancel.c" 1
 Check_and_cancel()
@@ -2674,11 +2674,11 @@ Check_and_cancel()
 	   "LAST");
 	
 	web_url("welcome.pl", 
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"URL={Host}:{Port}/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?page=menu&in=home", 
 		"Snapshot=t10.inf", 
 		"Mode=HTML", 
 		"LAST");
@@ -2729,11 +2729,11 @@ Check_and_cancel()
 	web_reg_find("Text=Itinerary","LAST");
 	
 	web_custom_request("itinerary.pl","Method=POST",
-		"URL=http://localhost:1080/cgi-bin/itinerary.pl",
+		"URL={Host}:{Port}/cgi-bin/itinerary.pl",
 		"Body={c_wcr}",
 		"TargetFrame=", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/itinerary.pl", 
+		"Referer={Host}:{Port}/cgi-bin/itinerary.pl", 
 		"Snapshot=t11.inf", 
 		"Mode=HTML",		
 		"LAST");
@@ -2744,7 +2744,7 @@ Check_and_cancel()
 
 	return 0;
 }
-# 5 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
+# 5 "c:\\projects\\perfomance lab\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
@@ -2764,5 +2764,5 @@ vuser_end()
 	lr_end_transaction("UC02_TR04_Logout",2);
 	return 0;
 }
-# 6 "c:\\users\\egogd\\desktop\\18\\ogdanets\\lr_dz_ogdanets\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
+# 6 "c:\\projects\\perfomance lab\\webtours\\uc02_cancel_order_ogdanets\\\\combined_UC02_Cancel_order_Ogdanets.c" 2
 

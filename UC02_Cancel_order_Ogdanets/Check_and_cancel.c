@@ -29,11 +29,11 @@ Check_and_cancel()
 	   LAST);
 	
 	web_url("welcome.pl", 
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"URL={Host}:{Port}/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Referer={Host}:{Port}/cgi-bin/nav.pl?page=menu&in=home", 
 		"Snapshot=t10.inf", 
 		"Mode=HTML", 
 		LAST);
@@ -84,11 +84,11 @@ Check_and_cancel()
 	web_reg_find("Text=Itinerary",LAST);
 	
 	web_custom_request("itinerary.pl","Method=POST",
-		"URL=http://localhost:1080/cgi-bin/itinerary.pl",
+		"URL={Host}:{Port}/cgi-bin/itinerary.pl",
 		"Body={c_wcr}",
 		"TargetFrame=", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/itinerary.pl", 
+		"Referer={Host}:{Port}/cgi-bin/itinerary.pl", 
 		"Snapshot=t11.inf", 
 		"Mode=HTML",		
 		LAST);

@@ -1,27 +1,33 @@
-Virtual User Script started at: 22.11.2019 23:15:59
+Virtual User Script started at: 30.11.2019 18:47:52
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 12.60.0 for Windows 10; build 971 (рту 09 2018 11:27:13)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
 Replay user agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko  	[MsgId: MMSG-26988]
-Runtime Settings file: "C:\Users\egogd\Desktop\18\Ogdanets\LR_DZ_Ogdanets\WebTours\UC02_Cancel_order_Ogdanets\\default.cfg"  	[MsgId: MMSG-27141]
+Runtime Settings file: "C:\Projects\Perfomance lab\WebTours\UC02_Cancel_order_Ogdanets\\default.cfg"  	[MsgId: MMSG-27141]
 vuser_init.c(3): web_reg_save_param started  	[MsgId: MMSG-26355]
 vuser_init.c(3): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
 vuser_init.c(7): web_url("webTours") started  	[MsgId: MMSG-26355]
+vuser_init.c(7): Notify: Parameter Substitution: parameter "Host" =  "http://localhost"
+vuser_init.c(7): Notify: Parameter Substitution: parameter "Port" =  "1080"
 vuser_init.c(7): Detected non-resource "http://localhost:1080/webTours/header.html" in "http://localhost:1080/webTours/"  	[MsgId: MMSG-26574]
 vuser_init.c(7): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/webTours/"  	[MsgId: MMSG-26574]
 vuser_init.c(7): Found resource "http://localhost:1080/webTours/images/hp_logo.png" in HTML "http://localhost:1080/webTours/header.html"  	[MsgId: MMSG-26659]
 vuser_init.c(7): Found resource "http://localhost:1080/webTours/images/webtours.png" in HTML "http://localhost:1080/webTours/header.html"  	[MsgId: MMSG-26659]
 vuser_init.c(7): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 vuser_init.c(7): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
-vuser_init.c(7): Notify: Saving Parameter "userSession = 127537.769056298zfzAccDpQQfiDDDDDQDzVpDtDQHf".
+vuser_init.c(7): Notify: Saving Parameter "userSession = 127592.456217092zfzDADzpQzzzzzzHDQDHipccVi".
 vuser_init.c(7): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
-vuser_init.c(7): web_url("webTours") was successful, 10080 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+vuser_init.c(7): web_url("webTours") was successful, 10078 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 vuser_init.c(17): Notify: Transaction "UC02_TR01_Login" started.
 vuser_init.c(19): web_reg_find started  	[MsgId: MMSG-26355]
 vuser_init.c(19): Notify: Parameter Substitution: parameter "Login" =  "jojo"
 vuser_init.c(19): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 vuser_init.c(21): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
-vuser_init.c(21): Notify: Parameter Substitution: parameter "userSession" =  "127537.769056298zfzAccDpQQfiDDDDDQDzVpDtDQHf"
+vuser_init.c(21): Notify: Parameter Substitution: parameter "Host" =  "http://localhost"
+vuser_init.c(21): Notify: Parameter Substitution: parameter "Port" =  "1080"
+vuser_init.c(21): Notify: Parameter Substitution: parameter "Host" =  "http://localhost"
+vuser_init.c(21): Notify: Parameter Substitution: parameter "Port" =  "1080"
+vuser_init.c(21): Notify: Parameter Substitution: parameter "userSession" =  "127592.456217092zfzDADzpQzzzzzzHDQDHipccVi"
 vuser_init.c(21): Notify: Parameter Substitution: parameter "Login" =  "jojo"
 vuser_init.c(21): Notify: Parameter Substitution: parameter "Password" =  "bean"
 vuser_init.c(21): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
@@ -34,7 +40,7 @@ vuser_init.c(21): Registered web_reg_find successful for "Text=Welcome, <b>jojo<
 vuser_init.c(21): web_submit_data("login.pl") was successful, 5779 body bytes, 2031 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
 vuser_init.c(38): web_set_sockets_option started  	[MsgId: MMSG-26355]
 vuser_init.c(38): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
-vuser_init.c(40): Notify: Transaction "UC02_TR01_Login" ended with a "Pass" status (Duration: 0,1609 Wasted Time: 0,0070).
+vuser_init.c(40): Notify: Transaction "UC02_TR01_Login" ended with a "Pass" status (Duration: 0,1919 Wasted Time: 0,0093).
 Ending action vuser_init.
 Running Vuser...
 Starting iteration 1.
@@ -51,63 +57,151 @@ Check_and_cancel.c(20): Registering web_reg_save_param was successful  	[MsgId: 
 Check_and_cancel.c(25): web_reg_save_param started  	[MsgId: MMSG-26355]
 Check_and_cancel.c(25): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
 Check_and_cancel.c(31): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Check_and_cancel.c(31): Notify: Parameter Substitution: parameter "Host" =  "http://localhost"
+Check_and_cancel.c(31): Notify: Parameter Substitution: parameter "Port" =  "1080"
+Check_and_cancel.c(31): Notify: Parameter Substitution: parameter "Host" =  "http://localhost"
+Check_and_cancel.c(31): Notify: Parameter Substitution: parameter "Port" =  "1080"
 Check_and_cancel.c(31): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
 Check_and_cancel.c(31): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
 Check_and_cancel.c(31): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Check_and_cancel.c(31): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
 Check_and_cancel.c(31): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
 Check_and_cancel.c(31): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_1 = 251466393-817-JB".
-Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_2 = 251445979-1573-JB".
-Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_3 = 251445604-2332-JB".
-Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_1 = 1".
-Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_2 = 3".
-Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_3 = 2".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_1 = 251445604-794-JB".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_2 = 251466751-1559-JB".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_3 = 251444942-2342-JB".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_4 = 251455973-3099-JB".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_5 = 2514697074-38539-JB".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_6 = 251451977-4646-IP".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_7 = 251459672-5397-IP".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_8 = 2514759668-61618-IP".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_9 = 251464582-6979-IP".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_10 = 25146791-774-IP".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_11 = 251446052-8493-IP".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_1 = 6".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_2 = 11".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_3 = 3".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_4 = 7".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_5 = 9".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_6 = 2".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_7 = 8".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_8 = 1".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_9 = 4".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_10 = 10".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_11 = 5".
 Check_and_cancel.c(31): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
 Check_and_cancel.c(31): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
-Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_count = 3".
-Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_count = 3".
-Check_and_cancel.c(31): web_url("welcome.pl") was successful, 10014 body bytes, 1913 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
-Check_and_cancel.c(41): Notify: Transaction "UC02_TR02_Check" ended with a "Pass" status (Duration: 0,3042 Wasted Time: 0,0254).
+Check_and_cancel.c(31): Notify: Saving Parameter "c_flightids_count = 11".
+Check_and_cancel.c(31): Notify: Saving Parameter "c_cgifields_count = 11".
+Check_and_cancel.c(31): web_url("welcome.pl") was successful, 19148 body bytes, 1913 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Check_and_cancel.c(41): Notify: Transaction "UC02_TR02_Check" ended with a "Pass" status (Duration: 0,2212 Wasted Time: 0,0106).
 Check_and_cancel.c(51): Notify: Saving Parameter "c_buffer = 1=on&".
-Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "3"
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
 Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&"
-Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_1" =  "251466393-817-JB"
-Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251466393-817-JB&".
-Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "3"
-Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251466393-817-JB&"
-Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_2" =  "251445979-1573-JB"
-Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&".
-Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "3"
-Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&"
-Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_3" =  "251445604-2332-JB"
-Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&".
-Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "3"
-Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "3"
-Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&"
-Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_1" =  "1"
-Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&.cgifields=1&".
-Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "3"
-Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&.cgifields=1&"
-Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_2" =  "3"
-Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&.cgifields=1&.cgifields=3&".
-Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "3"
-Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&.cgifields=1&.cgifields=3&"
-Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_3" =  "2"
-Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&.cgifields=1&.cgifields=3&.cgifields=2&".
-Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "3"
-Check_and_cancel.c(70): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&.cgifields=1&.cgifields=3&.cgifields=2&"
-Check_and_cancel.c(70): Notify: Saving Parameter "c_wcr = 1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&.cgifields=1&.cgifields=3&.cgifields=2&removeFlights.x=62&removeFlights.y=14".
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_1" =  "251445604-794-JB"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_2" =  "251466751-1559-JB"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_3" =  "251444942-2342-JB"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_4" =  "251455973-3099-JB"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_5" =  "2514697074-38539-JB"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_6" =  "251451977-4646-IP"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_7" =  "251459672-5397-IP"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_8" =  "2514759668-61618-IP"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_9" =  "251464582-6979-IP"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_10" =  "25146791-774-IP"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&"
+Check_and_cancel.c(55): Notify: Parameter Substitution: parameter "c_flightids_11" =  "251446052-8493-IP"
+Check_and_cancel.c(55): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&".
+Check_and_cancel.c(53): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_1" =  "6"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_2" =  "11"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_3" =  "3"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_4" =  "7"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_5" =  "9"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_6" =  "2"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_7" =  "8"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_8" =  "1"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_9" =  "4"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_10" =  "10"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&.cgifields=10&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&.cgifields=10&"
+Check_and_cancel.c(64): Notify: Parameter Substitution: parameter "c_cgifields_11" =  "5"
+Check_and_cancel.c(64): Notify: Saving Parameter "c_buffer = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&.cgifields=10&.cgifields=5&".
+Check_and_cancel.c(61): Notify: Parameter Substitution: parameter "c_flightids_count" =  "11"
+Check_and_cancel.c(70): Notify: Parameter Substitution: parameter "c_buffer" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&.cgifields=10&.cgifields=5&"
+Check_and_cancel.c(70): Notify: Saving Parameter "c_wcr = 1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&.cgifields=10&.cgifields=5&removeFlights.x=62&removeFlights.y=14".
 Check_and_cancel.c(82): Notify: Transaction "UC02_TR03_Cancel" started.
 Check_and_cancel.c(84): web_reg_find started  	[MsgId: MMSG-26355]
 Check_and_cancel.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 Check_and_cancel.c(86): web_custom_request("itinerary.pl") started  	[MsgId: MMSG-26355]
-Check_and_cancel.c(86): Notify: Parameter Substitution: parameter "c_wcr" =  "1=on&flightID=251466393-817-JB&flightID=251445979-1573-JB&flightID=251445604-2332-JB&.cgifields=1&.cgifields=3&.cgifields=2&removeFlights.x=62&removeFlights.y=14"
+Check_and_cancel.c(86): Notify: Parameter Substitution: parameter "Host" =  "http://localhost"
+Check_and_cancel.c(86): Notify: Parameter Substitution: parameter "Port" =  "1080"
+Check_and_cancel.c(86): Notify: Parameter Substitution: parameter "c_wcr" =  "1=on&flightID=251445604-794-JB&flightID=251466751-1559-JB&flightID=251444942-2342-JB&flightID=251455973-3099-JB&flightID=2514697074-38539-JB&flightID=251451977-4646-IP&flightID=251459672-5397-IP&flightID=2514759668-61618-IP&flightID=251464582-6979-IP&flightID=25146791-774-IP&flightID=251446052-8493-IP&.cgifields=6&.cgifields=11&.cgifields=3&.cgifields=7&.cgifields=9&.cgifields=2&.cgifields=8&.cgifields=1&.cgifields=4&.cgifields=10&.cgifields=5&removeFlights.x=62&removeFlights.y=14"
+Check_and_cancel.c(86): Notify: Parameter Substitution: parameter "Host" =  "http://localhost"
+Check_and_cancel.c(86): Notify: Parameter Substitution: parameter "Port" =  "1080"
 Check_and_cancel.c(86): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Check_and_cancel.c(86): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Check_and_cancel.c(86): Registered web_reg_find successful for "Text=Itinerary" (count=1)  	[MsgId: MMSG-26364]
-Check_and_cancel.c(86): web_custom_request("itinerary.pl") was successful, 3797 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Check_and_cancel.c(96): Notify: Transaction "UC02_TR03_Cancel" ended with a "Pass" status (Duration: 0,1527 Wasted Time: 0,0072).
+Check_and_cancel.c(86): web_custom_request("itinerary.pl") was successful, 12926 body bytes, 255 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Check_and_cancel.c(96): Notify: Transaction "UC02_TR03_Cancel" ended with a "Pass" status (Duration: 0,1085 Wasted Time: 0,0076).
 Ending action Check_and_cancel.
 Ending iteration 1.
 Ending Vuser...
@@ -119,7 +213,7 @@ vuser_end.c(5): Detected non-resource "http://localhost:1080/WebTours/home.html"
 vuser_end.c(5): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 vuser_end.c(5): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 vuser_end.c(5): web_url("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-vuser_end.c(15): Notify: Transaction "UC02_TR04_Logout" ended with a "Pass" status (Duration: 0,2768 Wasted Time: 0,0075).
+vuser_end.c(15): Notify: Transaction "UC02_TR04_Logout" ended with a "Pass" status (Duration: 0,1801 Wasted Time: 0,0083).
 Ending action vuser_end.
 Vuser Terminated.
-Vuser 0 (thread 788), ended OK."
+Vuser 0 (thread 10112), ended OK."
